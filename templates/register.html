@@ -1,0 +1,50 @@
+{% extends "layout.html" %} {% block css %}
+<link rel="stylesheet" href="static/login.css" />
+{% endblock %} {% block body %}
+<main>
+    <h1>Meu Candidato</h1>
+    <p>Isso não é um candidato não, É UM PAI</p>
+
+    <form action="/login" method="post">
+        <h2>Criar uma conta</h2>
+        <div class="inputContainer">
+            <label for="email">Email</label>
+            <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="exemplo@email.com"
+                autofocus
+                autocomplete="off"
+                required
+            />
+        </div>
+        <div class="inputContainer">
+            <label for="name">Nome</label>
+            <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="João da Silva"
+                autocomplete="off"
+                required
+            />
+        </div>
+        <div class="inputContainer">
+            <label for="password">Senha</label>
+            <input
+                type="password"
+                name="password"
+                id="password"
+                autocomplete="off"
+                placeholder="No mínimo 6 caracteres"
+                minlength="6"
+                required
+            />
+        </div>
+
+        <button type="submit">Criar</button>
+        <a href="/">Fazer Login</a>
+    </form>
+</main>
+{% endblock %}

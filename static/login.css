@@ -1,0 +1,81 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 7rem;
+}
+
+p {
+    margin: 1rem 0 7rem;
+}
+
+form {
+    background-color: var(--white);
+    
+    width: min(90%, 476px);
+    padding: 5.4rem 6.4rem;
+    border-radius: 28px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+    font-weight: 4002;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+input {
+    padding: 1.2rem 1.4rem;
+    border-radius: 8px;
+    border: 1px solid var(--black);
+}
+
+button {
+    color: var(--gray-100);
+    background-color: var(--blue-200);
+    font-weight: 500;
+
+    width: 70%;
+    margin: 0 auto;
+    padding: 1.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 2rem;
+}
+
+button:hover {
+    filter: brightness(0.9);
+}
+
+a {
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 2.4rem 3.4rem;
+        gap: 3rem;
+    }
+    
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+}

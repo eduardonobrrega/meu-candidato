@@ -1,0 +1,51 @@
+:root {
+    font-size: 62.5%;
+    --gray-100: #f0f4f9;
+    --white: #fff;
+    --black: #1f1f1f;
+    --blue-100: #0b57d0;
+    --blue-200: #0e4eb4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+body,
+input,
+button,
+textarea {
+    font: 400 1.6rem 'Roboto', sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    min-height: 100vh;
+    color: var(--black);
+    background-color: var(--gray-100);
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue-100);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+a:hover {
+    background-color: var(--gray-100);
+}
